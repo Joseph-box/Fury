@@ -1,16 +1,30 @@
 <Ui xmlns="http://www.blizzard.com/wow/ui/"
-xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-xsi:schemaLocation="http://www.blizzard.com/wow/ui/ C:\Projects\WoW\Bin\Interface\FrameXML\UI.xsd">
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.blizzard.com/wow/ui/ C:\Projects\WoW\Bin\Interface\FrameXML\UI.xsd">
 	<!-- $Id$ -->
 
 	<!-- Localization -->
-	<Script file="Localization.lua"/>
+	<Script file="Localization.lua" />
 
 	<!-- My Script -->
-	<Script file="Fury.lua"/>
+	<Script file="Fury.lua" />
+
+	<!-- Tooltips -->
+	<GameTooltip name="Fury_Tooltip"
+		frameStrata="TOOLTIP"
+		hidden="true"
+		parent="UIParent"
+		inherits="GameTooltipTemplate">
+		<Scripts>
+			<OnLoad>
+		this:SetOwner(WorldFrame, "ANCHOR_NONE");
+			</OnLoad>
+		</Scripts>
+	</GameTooltip>
 
 	<!-- My AddOn Frames -->
-	<Frame name="FuryFrame" parent="UIParent">
+	<Frame name="FuryFrame"
+		parent="UIParent">
 		<Scripts>
 			<OnLoad>
 				Fury_OnLoad();
