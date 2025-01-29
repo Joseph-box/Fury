@@ -4,7 +4,7 @@
 ## Author: Harrio. (From CubeNicke and Orig. from Bhaerau)
 ## eMail: For CubeNicke: cubenicke@gmail.com (For Bhaerau" bhaerau@gmail.com)
 ## DefaultState: enabled
-## SavedVariables: Fury_Configuration, Fury_Runners, Fury_ImmuneDisarm
+## SavedVariables: Fury_Configuration, Fury_Runners, Fury_ImmuneDisarm, Fury_ImmuneInterrupt
 ## OptionalDeps: IsMounted, Outfitter
 IsMounted\IsMounted.xml
 Fury.xml
